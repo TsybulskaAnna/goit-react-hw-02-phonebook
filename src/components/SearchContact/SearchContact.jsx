@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types';
 const SearchContact = ({ searchValue, handleChange }) => {
   return (
-    <div >
+    <div>
       <label>
         Find contact by name:
         <input
@@ -16,3 +17,8 @@ const SearchContact = ({ searchValue, handleChange }) => {
 };
 
 export default SearchContact;
+
+SearchContact.propTypes = {
+  searchValue: PropTypes.string.isRequired,
+  handleChange: PropTypes.func.isRequired,
+};

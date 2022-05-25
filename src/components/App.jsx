@@ -68,11 +68,13 @@ export class App extends Component {
   };
 
   handleChange = e => {
+    console.log(e)
     this.setState({ [e.target.name]: e.target.value });
   };
 
   render() {
     const { filter, contacts } = this.state;
+    console.log(filter);
     return (
       <>
         <Section title={'Phonebook'}>
